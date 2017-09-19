@@ -1,0 +1,4 @@
+sbatch makefastasbatch
+
+go through wach loci_v2.fa file and separate all sequences into individual fastas based on lottia protein ID
+in both AA and nucleotide

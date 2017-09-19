@@ -1,0 +1,5 @@
+
+
+[phuong@br005 6align]$ cat *v2.fa > mitogenome.allsamples.fa
+
+[phuong@br005 6align]$ mafft --addfragments mitogenome.allsamples.fa lophigenome > mitogenome.all.aligned.fa

@@ -1,0 +1,5 @@
+cp /pylon2/bi4s86p/phuong/conoideaRNAseq/2trimmed/MAMP*.fq ./
+cp /pylon2/bi4s86p/phuong/nico.turridae/0data/fastq/*final*.fq ./
+
+
+notes on which reads were used where are in sample_names.xlsx

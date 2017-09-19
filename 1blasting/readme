@@ -1,0 +1,4 @@
+sbatch contig_filter_batch
+
+
+perform reciprocol blast hits, pulls out best hits, accounts for best hit nonoverlapping fragments

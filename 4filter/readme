@@ -1,0 +1,5 @@
+sbatch filterbatch
+
+create filtered loci, min 4X in atg least 70% of sequence
+
+copied over SRR sequences from 3.5

@@ -1,0 +1,36 @@
+python rename.py
+
+renames sequences so that you can feed it into repeat masker
+
+requires: 
+
+1. turrid.2017.baits.sliced.filtered.add
+
+creates:
+
+1. turrid.seq.fa
+2. mymap
+
+
+
+###################################
+
+http://www.repeatmasker.org/cgi-bin/WEBRepeatMasker
+
+input file: turrid.seq.fa
+
+search enginge: abblast
+
+speed/sensitivity: default
+
+dna source: fruit fly
+
+return format: tar
+
+return method: markphuong@gmail.com
+
+
+##########
+
+python remove.repeats.py
+if repeats detected anywhere, remove the entire sequence

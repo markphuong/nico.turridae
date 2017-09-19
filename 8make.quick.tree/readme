@@ -1,0 +1,17 @@
+sbatch tree_batch
+
+used this to only choose loci that had at least 2 species in it.
+
+copied those files into /results, which were used in the downstream steps
+
+sbatch treebatchraxml
+
+also made a guide tree to help me figure out which speices to pick
+
+ran it in raxml
+
+resultant file: RAxML_bipartitions.turrid.test
+
+used all alignments with at least 19 speices in it
+
+only included the 5 SRR sequences + the 22 transcriptomes paul sent me

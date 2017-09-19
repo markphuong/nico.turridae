@@ -1,0 +1,12 @@
+sbatch grabseqbatch
+
+
+
+generated fasta files containing three sets for ancestral sequence reconstruction:
+
+1. Terebra subulata OR Cinguloterebra anilis + any of the 24 Turrids
+2. Crassispiria cerithina + any of the 24 turrids
+3. Gemmula congener OR Turridrupa jubata + any of the remaining 22 Turrids.
+
+
+the 'set' files contain these groupings

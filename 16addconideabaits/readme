@@ -1,0 +1,4 @@
+python grab.long.seq.py
+
+also at least 120bp in length
+cat turrid.2017.baits.fa.sliced.filtered additional.conoidea.fa > turrid.2017.baits.sliced.filtered.add

@@ -1,0 +1,6 @@
+sbatch align_batch
+
+
+align those sequences.
+
+choose the longest sequence, and use mafft to add fragments to those sequence -- helps with fragmentary alignments

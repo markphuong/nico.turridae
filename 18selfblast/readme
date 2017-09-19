@@ -1,0 +1,51 @@
+python rename.conus.py
+
+fixes shitty cone snail headers so that they look like all the other headers from the turrid/terebridae samples
+
+requires:
+
+1. turrid.2017.baits.transcriptome.phylogenetics.fa.sliced.filtered.rm
+
+creates:
+
+1. turrid.2017.baits.renamed.fa
+2. rename.conus.map -- map of how headers were changed
+
+#################################################
+python remove.weird.py
+
+requires:
+
+1. turrid.2017.baits.renamed.fa
+
+creates:
+
+1. remove.these.loci -- 43 loci that were removed
+2. turried.2017.baits.renamed.weird.removed.fa
+
+these loci that were removed show up multiple times, even though it's supposed to be 1 locus per lottia protein ID
+
+
+#########################################
+
+
+
+blastn -query turried.2017.baits.renamed.weird.removed.fa -db turried.2017.baits.renamed.weird.removed.fa -outfmt 6 -out turrid.selfblast -evalue 1e-10
+
+##############################
+
+python parse.selfblast.py
+
+requires:
+
+1. turrid.selfblast
+2. turried.2017.baits.renamed.weird.removed.fa
+
+creates:
+
+1. seq.renamed -- map file of header changes
+2. turrid.2017.baits.SET.1.fa -- all seqs
+3. turrid.2017.baits.SET.2.fa - conus below 180bp removed
+4. loci.turrid.counts -- loci + num sequences covering that loci, max of 6
+
+708964 -- num bp targeted

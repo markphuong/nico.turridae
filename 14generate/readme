@@ -1,0 +1,3 @@
+sbatch generateancestralbatch
+
+generate ancestral sequences for all the sequence pairs in 13

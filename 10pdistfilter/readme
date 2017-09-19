@@ -1,0 +1,25 @@
+sbatch pdistbatch
+
+calculate cutoffs by finding the 95 percentile of all possible pairwise comparisons
+
+you do this by comparing pdistances between all possible pairwise comparisons in every fastafile
+
+sbatch pdistfilterbatch
+
+for every species comparison where the comparison is greater than the 95th
+percentile cutoff, add 1 to a dictionary where the species have separate keys.
+
+if a species has been flaged in > 10% of the comparisons, remove that species
+
+if >20% of the species are removed, remove the entire alignment
+
+creates 'entire_locus_removed' which lists the loci that failed this filter
+
+this filter likely catches poorly aligned alignments
+
+in results, you have:
+
+1. the original file '.NI'
+2. the '.pdist' file which contains sequences that passed thisfilter
+3. the 'pdistremoved' file which contains the sequences that were removed
+

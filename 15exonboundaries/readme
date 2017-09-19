@@ -1,0 +1,13 @@
+sbatch exoneratebatch
+
+break up loci into different exons
+
+python filterloci.py
+
+filter loci for GC content <0.3 > 0.7
+
+and choose loci with min length of 120bp
+
+
+497344 bp for 120bp min length
+258049 for 180bp min length

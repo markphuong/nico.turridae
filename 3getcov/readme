@@ -1,0 +1,3 @@
+sbatch cov_het_batch
+
+creates intermediate files of coverage and heterozygosity

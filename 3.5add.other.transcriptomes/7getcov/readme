@@ -1,0 +1,4 @@
+sbatch cov_het_batch
+
+
+generates cov and het files

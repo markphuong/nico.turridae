@@ -1,0 +1,3 @@
+sbatch 1rename.and.filterbatch
+
+rename fasta files so that they would fit into programs

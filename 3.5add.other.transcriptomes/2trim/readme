@@ -1,0 +1,7 @@
+sbatch trim_merge
+
+cleaned the crass, unedog, and gemm transcriptomes
+
+sbatch trim_merge.single
+
+the terebridae transcriptomes, only one side of the read was good, other only had 1 base (not uploaded), so only dealt with one end

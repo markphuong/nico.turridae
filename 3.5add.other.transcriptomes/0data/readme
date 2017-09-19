@@ -1,0 +1,11 @@
+/home/phuong/sratoolkit.2.8.2-1-centos_linux64/bin/fastq-dump --split-files SRR1574923.sra
+/home/phuong/sratoolkit.2.8.2-1-centos_linux64/bin/fastq-dump --split-files SRR1574907.sra
+/home/phuong/sratoolkit.2.8.2-1-centos_linux64/bin/fastq-dump --split-files SRR1574922.sra
+
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR157/SRR1574923/SRR1574923.sra
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR157/SRR1574907/SRR1574907.sra
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR157/SRR1574922/SRR1574922.sra
+
+
+grabbed 5 additional transcriptomes with format above to (a) downloaded data from ncbi sra (using that wget link is very fast) and also split files into read1 and read2 using the sratoolkit
+

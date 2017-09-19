@@ -1,0 +1,5 @@
+sbatch contig_filter_batch
+
+similar to nico.turridae/1blasting
+
+get best hits, accounts for best hits in non-overlapping regions

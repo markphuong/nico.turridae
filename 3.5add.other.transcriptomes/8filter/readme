@@ -1,0 +1,4 @@
+sbatch filterbatch
+
+
+min 4X coverage, covers at least 70% of sequence

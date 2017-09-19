@@ -1,0 +1,8 @@
+sbatch mappingbatch
+
+maps reads to reference, for turrid transcriptomes
+
+
+sbatch mappingbatch_single
+
+maps reads to reference, for terebridae transcriptomes

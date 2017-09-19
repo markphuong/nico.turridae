@@ -1,0 +1,7 @@
+sbatch trinitybatch
+
+for the turridae transcriptomes from sra
+
+sbatch trinitybatch_single
+
+for the terebridae transcriptomes

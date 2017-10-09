@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -p LM
+#SBATCH --mem=2976GB
+#SBATCH -t 72:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=markphuong@gmail.com
+
+#echo commands to stdout
+
+module unload python
+module load python/2.7.11_gcc
+
+#move to working directory
+cd $LOCAL
+
+cp /pylon5/bi4s86p/phuong/nico.turridae/7consensus/*.py ./
+cp /pylon5/bi4s86p/phuong/nico.turridae/6align/aligned/* ./
+
+python pick_loci_and_fix_double.py
+

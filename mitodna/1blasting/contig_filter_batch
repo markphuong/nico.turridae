@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH -p LM
+#SBATCH --mem=2880GB
+#SBATCH -t 72:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=markphuong@gmail.com
+
+#echo commands to stdout
+
+module load python/2.7.11_gcc
+module load blast
+
+
+
+#move to working directory
+cd $LOCAL
+
+cp /pylon5/bi4s86p/phuong/nico.turridae/mitodna/1blasting/lophi* ./
+cp /pylon5/bi4s86p/phuong/nico.turridae/mitodna/1blasting/*.py ./
+cp /pylon5/bi4s86p/phuong/nico.turridae/mitodna/1blasting/map* ./
+cp /pylon5/bi4s86p/phuong/nico.turridae/mitodna/1blasting/*.NI ./
+
+#run python script
+
+
+
+python recipBlastWrapper_caeno.py --map mapfile
+

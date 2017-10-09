@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -p LM
+#SBATCH --mem=2720GB
+#SBATCH -t 24:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=markphuong@gmail.com
+
+#echo commands to stdout
+
+module load python/2.7.11_gcc
+
+
+#move to working directory
+cd $LOCAL
+
+cp /pylon5/bi4s86p/phuong/nico.turridae/8make.quick.tree/*.py $LOCAL
+cp /pylon5/bi4s86p/phuong/nico.turridae/8make.quick.tree/species_name_mapping $LOCAL
+cp /pylon5/bi4s86p/phuong/nico.turridae/8make.quick.tree/excludethese $LOCAL
+
+python generateAlignment.py 1
+
+cp turridae* /pylon5/bi4s86p/phuong/nico.turridae/8make.quick.tree
+
+cp *.NI /pylon5/bi4s86p/phuong/nico.turridae/8make.quick.tree/results
